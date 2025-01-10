@@ -6,11 +6,11 @@ require("dotenv").config();
 
 app.use(express.json());
 
-const connectDB = require("./connectMongo");
+const connectDB = require("../connectMongo");
 
 connectDB();
 
-const BookModel = require("./models/book.model");
+const BookModel = require("../models/book.model");
 // const redis = require('./redis')
 
 // const deleteKeys = async (pattern) => {
